@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://usa.heavencloud.in:2395/api/:path*"
+    },
+    {
+      "source": "transcripts/:path*",
+      "destination": "http://usa.heavencloud.in:2395/transcripts/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
